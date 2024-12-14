@@ -17,7 +17,7 @@ function App() {
   useEffect(() => {
     const fetchTasks = async () => {
       try {
-        const response = await fetch("https://todo-rsc1.onrender.com/tasks");
+        const response = await fetch("https://todo-5ffv.onrender.com/tasks");
         if (response.ok) {
           const data = await response.json();
           const sortedTasks = data.sort((a, b) => {
@@ -64,7 +64,7 @@ function App() {
     setPriority("high");
 
     try {
-      const response = await fetch("https://todo-rsc1.onrender.com/add-task", {
+      const response = await fetch("https://todo-5ffv.onrender.com/add-task", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -93,7 +93,7 @@ function App() {
       );
       setTasks(updatedTasks);
 
-      const response = await fetch("https://todo-rsc1.onrender.com/delete-tasks", {
+      const response = await fetch("https://todo-5ffv.onrender.com/delete-tasks", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
