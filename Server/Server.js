@@ -6,7 +6,7 @@ import { appendFile ,readFile ,writeFile } from "fs/promises";
 const app = express();
 const PORT = 5000;
 
-app.use(cors({ origin: 'https://mytodo-mauve.vercel.app/' }));
+app.use(cors({ origin: 'https://mytodo-mauve.vercel.app' }));
 app.use(bodyParser.json());
 
 app.get('/tasks', async (req, res) => {
